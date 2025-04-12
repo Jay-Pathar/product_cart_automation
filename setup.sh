@@ -2,6 +2,7 @@
 python3 -m venv ../env
 source ../env/bin/activate
 pip install -r requirements.txt
+export PYTHONPATH=$(pwd)
 
 # Add your LambdaTest credentials below
 export LT_USERNAME=""  # ADD LAMBDATEST USERNAME
