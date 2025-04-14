@@ -18,6 +18,7 @@ A Selenium-based automation script to search, select, and add Amazon products to
 
 ## 🧰 Key Dependencies
 
+- `python` : v3.8.0
 - `selenium`: v4.27.1
 - `pytest`: v8.3.5
 - `pytest-xdist`: v3.6.1
@@ -25,7 +26,7 @@ A Selenium-based automation script to search, select, and add Amazon products to
 
 ## 🛠️ Installation and Setup
 
-Add your LambdaTest credentials to `setup.sh`, then execute the below command to install dependencies:
+Add your  **_LambdaTest credentials_** to `setup.sh`, then execute the below command to install dependencies:
 ```bash
 source setup.sh
 ```
@@ -37,12 +38,12 @@ Run one of the following commands in the terminal based on your preference:
 - For sequential execution:
 
     ```bash
-    runSeq
+    runSeq # Alias for: pytest tests/test_amazon_cart.py
     ```
 
 - For parallel execution:
 
     ```bash
-    runParallel
+    runParallel # Alias for: pytest tests/test_amazon_cart.py -s -v -n 2
     ```
 
